@@ -5,4 +5,121 @@ html {
   *, *:before, *:after {
     box-sizing: inherit;
   }
+
+.contenido{
+  margin: 0 auto;
+  max-width: 120rem;
+}
+
+img{
+  max-width: 100%;
+  display: block;
+}
+
+/* header */
+h1{
+  text-align: center;
+  font-size: 4rem;
+}
+
+span{
+  color: #037bc0;
+}
+
+.nav-principal{
+  display: flex;
+  font-size: 1.5rem;
+  justify-content: space-between;
+  padding: 0.5rem;
+}
+
+.nav-principal a{
+  text-decoration: none;
+}
+
+.hero-image{
+  background-image: url(/img/principal.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 40rem;
+  margin-top: 1rem;
+}
+
+/* Categoria de productos */
+h2{
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+.categorias{
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  padding: 2rem;
+}
+
+.categoria{
+  display: flex;
+  flex-direction: column;
+}
+
+.categoria a{
+  text-decoration: none;
+  text-align: center;
+  font-size: 2rem;
+  height: 3rem;
+  transition: background-color ease 0.3s;
+  border-radius: 0px 0px 10px 0px;
+}
+
+.categoria a:hover{
+  background-color: #037bc0;
+  color: white;
+}
+
+/* Contenido Principal*/
+
+.Grid{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-template-rows: repeat(3,1fr);
+  gap: 1rem;
+}
+
+.productos{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: #037bc0;
+  color: white;
+}
+
+.btn{
+  background-color: greenyellow;
+  height: 3rem;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+}
+
+.btn a{
+  text-decoration: none;
   
+}
+
+.productos h3{
+  font-size: 2rem;
+}
+
+.productos p{
+  font-size: 1.5rem;
+}
+
+.Precio{
+  font-size: 2rem;
+  font-weight: bold;
+}
