@@ -16,14 +16,16 @@ img{
   display: block;
 }
 
-a:visited{
+
+a{
   color: black;
 }
 
 /* header */
 h1{
   text-align: center;
-  font-size: 4rem;
+  font-size: 4.5rem;
+  padding: 1.5rem;
 }
 
 span{
@@ -55,14 +57,15 @@ span{
 /* Categoria de productos */
 h2{
   text-align: center;
-  font-size: 2.5rem;
+  font-size: 3rem;
+  padding: 1rem;
 }
 
 .categorias{
   display: flex;
   justify-content: center;
   gap: 1rem;
-  padding: 1rem;
+  padding: 2rem;
   color: black;
   text-align: center;
 }
@@ -71,10 +74,11 @@ h2{
   text-decoration: none;
   text-align: center;
   font-size: 2rem;
-  height: 3rem;
+  height: 5rem;
   transition: background-color ease 0.3s;
   border-radius: 0px 0px 10px 0px;
   display: block;
+  padding: 1.5rem;
 }
 
 .categoria a:hover{
@@ -148,9 +152,9 @@ h2{
 }
 
 .btn{
-  background-color: greenyellow;
+  background-color: #8cbc00;
   height: 3rem;
-  padding: 2rem;
+  padding: 2.5rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -158,6 +162,9 @@ h2{
   color: black;
   margin: 1rem 2rem;
   border-radius: 3px;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: bold;
 }
 
 .productos img{
@@ -165,28 +172,37 @@ h2{
 }
 
 .btn a{
+  display: block;
   text-decoration: none;
-  
+  color: white;
+  display: block;
+  width: 100%;
 }
 
 .productos h3{
   font-size: 2rem;
+  text-transform: uppercase;
 }
 
 .productos p{
   font-size: 1.5rem;
+  margin: 0.5rem;
 }
 
-.Precio{
+h4{
   font-size: 2rem;
+  text-transform: uppercase;
   font-weight: bold;
 }
+
 
 /*Footer*/
 .foot{
   display: flex;
   gap: 15rem;
   margin: 1.5rem;
+  width: 100%;
+  justify-content: space-around;
 }
 
 .foot-m{
@@ -195,17 +211,122 @@ h2{
 }
 
 .foot-m h3 {
-   font-size: 3rem;
+   font-size: 2.5rem;
    margin: 1rem 0rem;
 }
 
 .foot-m a{
   text-decoration: none;
   margin: 0.5rem;
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 .footerP{
   text-align: center;
   font-size: 2rem;
+}
+
+/** Sobre Nosotros **/
+.SobreNostros{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 2rem;
+}
+
+.SobreNosotrosTexto{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+/** Blog **/
+
+.entradaBlogTitulo{
+  margin: 1rem 0rem;
+  font-size: 2rem;
+}
+
+.GridBlog{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 1rem;
+}
+
+.entradaBlog{
+  display: flex;
+  flex-direction: column;
+  margin: 2rem 0rem;
+}
+
+.entradaBlog img{
+  height: 30rem;
+  width: 100%;
+  margin: 0;
+  object-fit: cover;
+}
+
+.entradaBlogFechaAutor{
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.2rem;
+}
+
+.entradaBlogContenido{
+  font-size: 1.3rem;
+  line-height: 2rem;
+}
+
+.entradaBlogBoton{
+  background-color: #8cbc00;
+  width: 20rem;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  transition: background-color ease 1s;
+}
+
+.entradaBlogBoton:hover{
+  background-color: green;
+}
+
+.entradaBlogBoton a{
+  text-decoration: none;
+  color: white;
+}
+
+.entradaBlogAside{
+  display: flex;
+  flex-direction: column;
+}
+
+.entradaBlogAside a {
+  text-decoration: none;
+  margin: 0.3rem 0;
+}
+
+p span{
+  font-weight: bold;
+}
+
+hr{
+  border-color: #eaeaea;
+}
+
+/* Galeria */
+.gridGaleria{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 1rem;
+}
+
+.fotosGaleria{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }

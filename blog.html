@@ -3,13 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/app.css">
     <title>Ecommerce - Blog</title>
 </head>
 <body>
+    
     <h1>Tienda <span>Muebles</span></h1>
 
-    <div>
-        <nav>
+    <hr>
+
+        <nav class="nav-principal contenido">
             <a href="index.html">Inicio</a>
             <a href="nosotros.html">Nosotros</a>
             <a href="tienda.html">Tienda</a>
@@ -17,6 +21,91 @@
             <a href="galeria.html">Galeria</a>
             <a href="contacto.html">Contacto</a>
         </nav>
-    </div>
+    <hr>
+
+    <main class="contenido">
+        <h2>Nuestro Blog</h2>
+        <div class="GridBlog">
+            <div>
+                <section>
+                    <h3 class="entradaBlogTitulo">Guía de Colores</h3>
+                    <div class="entradaBlog">
+                        <img src="img/producto4.jpg" alt="Entrada de blog">
+                        <div class="entradaBlogFechaAutor">
+                            <p>Fecha: <span>22 de Octubre de 2023</span></p>
+                            <p>Escrito por : <span>TiendaMuebles</span></p>
+                        </div>
+                        <div class="entradaBlogContenido">
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt accusantium delectus soluta ipsa maiores eaque qui possimus doloremque, voluptate quasi a eligendi non architecto iusto laudantium modi labore, aperiam sint.</p>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa unde dignissimos corporis quas vero commodi autem doloribus recusandae ullam blanditiis, perferendis laborum maiores sed enim modi quia molestias, repellendus est!</p>
+                        </div>
+                        <div class="entradaBlogBoton">
+                            <a href="#">Leer</a>
+                        </div>
+                    </div>
+                </section>
+    
+                <section>
+                    <div class="entradaBlog">
+                        <img src="img/producto4.jpg" alt="Entrada de blog">
+                        <div class="entradaBlogFechaAutor">
+                            <p>Fecha: <span>22 de Octubre de 2023</span></p>
+                            <p>Escrito por : <span>TiendaMuebles</span></p>
+                        </div>
+                        <div class="entradaBlogContenido">
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt accusantium delectus soluta ipsa maiores eaque qui possimus doloremque, voluptate quasi a eligendi non architecto iusto laudantium modi labore, aperiam sint.</p>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa unde dignissimos corporis quas vero commodi autem doloribus recusandae ullam blanditiis, perferendis laborum maiores sed enim modi quia molestias, repellendus est!</p>
+                        </div>
+                        <div class="entradaBlogBoton">
+                            <a href="#">Leer</a>
+                        </div>
+                    </div>
+                </section>
+            
+            </div>
+    
+            <aside>
+               <h3 class="entradaBlogTitulo">Otras Entradas de Blog</h3>
+               <ul class="entradaBlogAside">
+                <a href="#">Guía de Colores</a>
+                <a href="#">Nuevos Modelos</a>
+                <a href="#">Guía para diseños de interiores</a>
+                <a href="#">Guía para diseños de exteriores</a>
+               </ul> 
+            </aside>
+        </div>
+    </main>
+
+    <hr>
+
+    <footer class="contenido">
+        <div class="foot">
+            <div class="foot-m">
+                <h3>Categorias</h3>
+                <a href="#">Cocina</a>
+                <a href="#">Oficina</a>
+                <a href="#">Jardin</a>
+                <a href="#">Cochera</a>
+                <a href="#">Dormitorios</a>
+            </div>
+            <div class="foot-m">
+                <h3>Sobre Nosotros</h3>
+                <a href="#">Nuestra Historia</a>
+                <a href="#">Mision,Vision y Valores</a>
+                <a href="#">Carreras</a>
+                <a href="#">Politica de Privacidad</a>
+                <a href="#">Terminos de servicio</a>
+            </div>
+            <div class="foot-m">
+                <h3>Soporte</h3>
+                <a href="#">Preguntas Frecuentes</a>
+                <a href="#">Ayuda en linea</a>
+                <a href="#">Confianza y seguridad</a>
+            </div>
+        </div>
+<hr>
+        <p class="footerP">Ecommerce - JVB</p>
+    </footer>
 </body>
+
 </html>
