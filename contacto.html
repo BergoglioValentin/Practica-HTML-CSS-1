@@ -3,20 +3,129 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/app.css">
+    
     <title>Ecommerce - Contacto</title>
 </head>
 <body>
     <h1>Tienda <span>Muebles</span></h1>
+    <hr>
 
-    <div>
-        <nav>
-            <a href="index.html">Inicio</a>
-            <a href="nosotros.html">Nosotros</a>
-            <a href="tienda.html">Tienda</a>
-            <a href="blog.html">Blog</a>
-            <a href="galeria.html">Galeria</a>
-            <a href="contacto.html">Contacto</a>
-        </nav>
-    </div>
+    <nav class="nav-principal contenido">
+        <a href="index.html">Inicio</a>
+        <a href="nosotros.html">Nosotros</a>
+        <a href="tienda.html">Tienda</a>
+        <a href="blog.html">Blog</a>
+        <a href="galeria.html">Galeria</a>
+        <a href="contacto.html">Contacto</a>
+    </nav>
+
+    <main class="contenido">
+        <h2>Contacto</h2>
+        <form>
+            <fieldset class="datosPersonales">
+                <legend class="Informacion">Tus Datos</legend>
+                
+                <div class="campo">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" placeholder="Tu Nombre">
+                </div>
+
+                <div class="campo">
+                    <label for="asunto">Asunto:</label>
+                    <input type="text" id="asunto" placeholder="Tu Asunto">
+                </div>
+
+                <div class="campo">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" placeholder="Tu Email">
+                </div>
+
+                <div class="campo">
+                    <label for="telefono">Telefono:</label>
+                    <input type="tel" id="telefono" placeholder="Tu Telefono">
+                </div>
+
+                <div class="campo">
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje"></textarea>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend class="Informacion">Pais</legend>
+                <div class="campo">
+                    <label for="pais">País:</label>
+                    <select id="pais">
+                        <option selected disabled>--Seleccione--</option>
+                        <option>Argentina</option>
+                        <option>Mexico</option>
+                        <option>Colombia</option>
+                        <option>España</option>
+                        <option>Chile</option>
+                    </select>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend class="Informacion">Información Extra</legend>
+                <div class="campo">
+                    <label for="tipo">Tipo:</label>
+                    <select id="tipo">
+                        <option selected disabled>--Seleccione--</option>
+                        <option>Cliente</option>
+                        <option>Proveedor</option>
+                        <option>Otro</option>
+                    </select>
+                </div>
+
+                <div class="campo">
+                    <label for="categoria">Categoría de interés</label>
+                    <input list="categorias" name="categorias">
+                    <datalist id="categorias">
+                        <option value="Cocina"></option>
+                        <option value="Exterior"></option>
+                        <option value="Recamara"></option>
+                        <option value="Oficina"></option>
+                        <option value="Television"></option>
+                    </datalist>
+                </div>
+            </fieldset>
+            <button>
+                Enviar
+            </button>
+        </form>
+    </main>
+
+    <footer class="contenido">
+        <div class="foot">
+            <div class="foot-m">
+                <h3>Categorias</h3>
+                <a href="#">Cocina</a>
+                <a href="#">Oficina</a>
+                <a href="#">Jardin</a>
+                <a href="#">Cochera</a>
+                <a href="#">Dormitorios</a>
+            </div>
+            <div class="foot-m">
+                <h3>Sobre Nosotros</h3>
+                <a href="#">Nuestra Historia</a>
+                <a href="#">Mision,Vision y Valores</a>
+                <a href="#">Carreras</a>
+                <a href="#">Politica de Privacidad</a>
+                <a href="#">Terminos de servicio</a>
+            </div>
+            <div class="foot-m">
+                <h3>Soporte</h3>
+                <a href="#">Preguntas Frecuentes</a>
+                <a href="#">Ayuda en linea</a>
+                <a href="#">Confianza y seguridad</a>
+            </div>
+        </div>
+<hr>
+        <p class="footerP">Ecommerce - JVB</p>
+    </footer>
 </body>
 </html>
